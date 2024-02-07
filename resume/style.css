@@ -5,6 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color: lightblue;
 }
+
 a {
   text-decoration: none;
 }
@@ -15,7 +16,7 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 30px 100px;
 }
 
@@ -33,11 +34,11 @@ nav {
   padding-left: 5px;
   color: #fd4766;
 }
-
 nav ul li {
   display: inline-block;
   list-style: none;
   padding: 10px 20px;
+  text-align: right;
 }
 
 nav ul li a {
@@ -108,7 +109,6 @@ nav ul li a:hover::after {
   display: block;
   width: 50%;
   height: auto;
-  border-radius: 50%;
 }
 
 .image {
