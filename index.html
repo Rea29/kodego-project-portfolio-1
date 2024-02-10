@@ -1,45 +1,176 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="UFT-8" />
-    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Welcome to my Portfolio</title>
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <script></script>
   <body>
-    <div class="lyn">
-      <nav>
-        <p class="logo">My Portfolio</p>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">My work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a href="#" class="btn"> Hire me</a>
+    <header class="header">
+      <a href="#" class="logo"><span>Rea</span>Lyn</a>
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Projects</a>
       </nav>
-    </div>
-    <div class="rea">
-      <div class="hero">
-        <h1>Hi, I'm <span>Realyn</span></h1>
-        <br />
+
+      <a href="#contact" class="contact"> Contact Me</a>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h3>Hi</h3>
+
+        <h1>
+          I'm <span>ReaLyn <br /></span>Frontend/Backend Developer
+        </h1>
         <p>
           This is my official website to show all details and work <br />
           experience of web development
         </p>
+        <a class="btn-1" href="./resume.pdf" download="resume.pdf">
+          Download CV</a
+        >
         <br />
-        <!-- <a href="#" class="btn"> Download CV</a> -->
-        <a href="resume.pdf" class="btn" download id="download" hidden
-          >Download CV</a
+        <br />
+        <br />
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/realyn-linas-38b595230/"
+            ><i class="bx bxl-linkedin-square" id="icon"></i
+          ></a>
+          <a href="https://www.facebook.com/rea2229/"
+            ><i class="bx bxl-facebook-circle" id="icon"></i
+          ></a>
+          <a href="https://www.twitch.tv/rea1022?sr=a">\
+            <i class="bx bxl-twitch" id="icon"></i></i></a>
+          <a href="https://www.instagram.com/really080910?igsh=NGN2ajNtOGxuaWZl"><i class="bx bxl-instagram" id="icon"></i></a>
+          <a href="https://github.com/Rea29"
+            ><i class="bx bxl-github" id="icon"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <img src="pic.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="pic.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span> Me</span></h2>
+        <h3>Frontend/Backend<span>Developer</span></h3>
+        <p>
+          I am a graduate of Bachelor of Science in Information Technology from
+          STI college Iloilo. I'm a dynamic, trustworthy, self deciplined, and
+          flexible person who worksquickly and completes everything to a high
+          standards. I will do my best to sharemy knowledge and skills and take
+          responsibilities for my ongoing professionaldevelopment.
+        </p>
+
+        <!-- <a href="./resume.pdf" class="btn" download id="download" hidden
+          >Download CV</a -->
         >
       </div>
-      <div class="image">
-        <img src="pic.png" alt="profile" />
+    </section>
+
+    <section class="experience" id="experience">
+      <h2 class="heading">Experience</h2>
+      <div class="experience-img">
+        <img src="IT tech.jpg" alt="" />
       </div>
-    </div>
+      <div class="experience-content">
+        <br />
+        <h3>Quality Assurance Analyst</h3>
+        <p>
+          Identify and maintain a set of requirements and standards in software
+          development. Also helps ensure that every system and stage of
+          development conforms to industry standards and end-user (and business)
+          requirements.
+        </p>
+        <h3>IT Technician Support</h3>
+        <p>
+          Computer networking - to interconnected computing devices that can
+          exchange data and share resources with each other,hardware and
+          Software troubleshooting.
+        </p>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <h2 class="heading">Project</h2>
+      <div class="project-img">
+        <img src="incubator.jpg" alt="" />
+      </div>
+      <div class="project-content">
+        <br />
+        <h3>SmartQuail Eggs Automated Incubator</h3>
+        <p>
+          Quail Egg Incubator with Automatic Egg Turning: The quail hatcher
+          machine has automatic temperature control and egg turner function.
+          Automatic temperature controlling
+        </p>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+
+    <section class="contact" id="contact"></section>
+
+    <section class="contact-form">
+      <h2 class="contact-me">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Number" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Subject" />
+        </div>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn-1" />
+      </form>
+    </section>
+    <footer class="footer">
+      <ul class="list">
+        <li>
+          <a href="">FAQ</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">About Me</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+        <li>
+          <a href="">Privacy Policy</a>
+        </li>
+
+        <p class="copyright">@ ReaLyn | All Rights Reserve</p>
+      </ul>
+    </footer>
   </body>
 </html>
