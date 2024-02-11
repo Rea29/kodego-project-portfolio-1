@@ -27,11 +27,15 @@
 }
 .logo:hover {
   color: orangered;
-  text-shadow: 0 0 25px orangered, 0 0 50px orangered, 0 0 50px orangered;
+  text-shadow: 0 0 25px orangered, 0 0 50px orangered,
+    0 0 50px rgb(219, 199, 192);
   transform: scale(1.1);
 }
 span {
   color: orangered;
+}
+.project-heading {
+  text-align: center;
 }
 .navbar a {
   font-size: 18px;
@@ -41,6 +45,7 @@ span {
   border-bottom: 3px solid transparent;
   transition: 0.3s ease;
 }
+
 .navbar a:hover,
 .navbar a.active {
   color: orangered;
@@ -126,7 +131,7 @@ span {
   color: orangered;
 }
 .img-box img {
-  border-radius: 50%;
+  border-radius: 10%;
   width: 550px;
 }
 ::-webkit-scrollbar {
@@ -183,9 +188,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12% 8%;
+  padding: 2% 8%;
   background: white;
   gap: 10em;
+  margin-bottom: 20%;
 }
 
 .experience-img img {
@@ -198,6 +204,7 @@ span {
 .experience-heading h2 {
   font-size: 100px;
   color: rgb(160, 46, 46);
+  text-align: center;
 }
 .experience-content h3 {
   font-size: 30px;
@@ -219,32 +226,48 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12% 8%;
-  background: white;
-  gap: 10em;
+  /* padding: 2% 2% 0 20%; */
+  background: black;
+  gap: 5em;
+}
+.project-title {
+  background-color: black;
+  font-size: 3em;
+  padding: 2% 0 0 2%; /*top left right bottom*/
+}
+#projectTitle {
+  text-align: center;
+  color: white;
+}
+.experience-title {
+  background-color: white;
+  font-size: 3em;
+  padding: 2% 0 0 2%; /*top left right bottom*/
+}
+#experienceTitle {
+  text-align: center;
+  color: black;
 }
 .project-img img {
   position: relative;
   width: 550px;
   box-shadow: 0 0 25px orangered, 0 0 50px orangered;
   border-radius: 10%;
+  /* margin-bottom: 70%; */
+  margin-top: 10%;
 }
 .project-heading h2 {
   font-size: 100px;
   color: rgb(160, 46, 46);
+  color: orangered;
 }
 .project-content h3 {
   font-size: 30px;
   color: orangered;
-}
-.project-content h3:hover {
-  color: orangered;
-  text-decoration-line: 0 0 25px orangered, 0 0 50px orangered,
-    0 0 50px orangered;
-  transform: scale(1.1);
+  color: white;
 }
 .project-content p {
-  color: black;
+  color: white;
   font-size: 20px;
   margin: 2em 0 3em;
 }
@@ -254,6 +277,7 @@ span {
   margin-top: 3em;
   margin-bottom: 1em;
   font-size: 36px;
+  color: black;
 }
 .contact-form form {
   max-width: 50em;
